@@ -15,5 +15,6 @@ public class HelloWorld {
         Scanner sc=new Scanner(System.in);
         name=sc.nextLine();
         System.out.println("Hello, "+name+".");
+
     }
 }
