@@ -13,7 +13,6 @@ public class Arr1 {
     public static final int ARRAY_LENGTH = 20;
     public static void main(String[] args) throws IOException {
         int[] array = initializeArray();
-        outarray(array);
         max(array);
     }
     public static int[] initializeArray() throws IOException {
@@ -24,11 +23,6 @@ public class Arr1 {
             array[i] = Integer.parseInt(s);
         }
         return array;
-    }
-    public static void outarray(int[] array){
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(i+" ");
-        }
     }
     public static void max(int[] array){
         int maxElement = array[0];
