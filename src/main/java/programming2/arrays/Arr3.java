@@ -17,11 +17,11 @@ public class Arr3 {
         int[] int_array = new int[10];
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < string_array.length; i++) {
-            System.out.println("Input "+(i+1)+" line");
+            System.out.println("Input " + (i + 1) + " line");
             string_array[i] = reader.readLine();
             int_array[i] = string_array[i].length();
         }
-        for (int element:int_array) {
+        for (int element : int_array) {
             System.out.println(element);
         }
     }

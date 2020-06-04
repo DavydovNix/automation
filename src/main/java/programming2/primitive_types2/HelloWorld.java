@@ -12,10 +12,11 @@ public class HelloWorld {
         System.out.println("Hello, world!");
         printHelloName();
     }
+
     public static void printHelloName() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input name:");
         String name = reader.readLine();
-        System.out.println("Hello, "+name);
+        System.out.println("Hello, " + name);
     }
 }

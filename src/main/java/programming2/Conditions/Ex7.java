@@ -11,18 +11,18 @@ public class Ex7 {
     Если по истечении 7 попыток число не угадывается, то выводится сообщение "Не угадал :(" и завершается работа.*/
     public static void main(String[] args) throws IOException {
         int secretNumber;
-        int myNum=0;
-        int countTries=0;
+        int myNum = 0;
+        int countTries = 0;
         Random rnd = new Random();
-        secretNumber = rnd.nextInt(10)+10;
+        secretNumber = rnd.nextInt(10) + 10;
         System.out.println(secretNumber);
-        BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
-        while (myNum != secretNumber && countTries!=7) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (myNum != secretNumber && countTries != 7) {
             countTries++;
             myNum = Integer.parseInt(reader.readLine());
-            if(myNum>secretNumber)
+            if (myNum > secretNumber)
                 System.out.println("Много");
-            else if (myNum<secretNumber)
+            else if (myNum < secretNumber)
                 System.out.println("Мало");
             else
                 System.out.println("Угадал :)");

@@ -17,8 +17,9 @@ public class Arr2 {
         }
         outarray(array);
     }
-    public static void outarray(String[] array){
-        for (int i = array.length-1; i >= 0 ; i--) {
+
+    public static void outarray(String[] array) {
+        for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
         }
     }

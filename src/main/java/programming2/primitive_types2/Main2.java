@@ -3,6 +3,7 @@ package programming2.primitive_types2;
 import programming2.primitive_types2.com.welcome.Hello;
 
 import java.io.IOException;
+
 /*Дополнительное задание (для тех, кому основное будет очень легким:-)
 Создать еще один класс Main2 с методом main(String[] args), который при запуске выводит в консоль “Hello, world!”.
 Создать отдельный пакет ‘com.welcome’. В нем создать класс Hello, туда добавить методы:
