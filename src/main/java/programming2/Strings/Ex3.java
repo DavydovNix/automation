@@ -13,7 +13,6 @@ public class Ex3 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String line = reader.readLine();
-        // Arrays.stream(line.replaceAll("\\pP", " ").split("\\s+")).sorted(Comparator.comparingInt(String.limit(1)))
         Arrays.stream(line.replaceAll("\\pP", " ").split("\\s+")).sorted(Comparator.comparingInt(String::length).reversed())
                 .limit(1).forEach(m -> System.out.println(m));
         /* String maxLegthWord;
